@@ -1,4 +1,5 @@
 const fs = require('fs');
+const { get_val } = require('./Funcs.js');
 
 (function () {
   const contents = fs.readFileSync("input.txt").toString();
@@ -16,9 +17,7 @@ const fs = require('fs');
     const g1 = group[1].split("");
     const g2 = group[2].split("");
     const int = g0.filter(x => g1.includes(x) && g2.includes(x));
-    const ascii = int[0].charCodeAt(0);
-    const val = ascii - (ascii <= 90 ? 64 - 26 : 96);
-    return val;
+    return get_val(int[0]);
   });
   const sum = values.reduce((a, b) => a + b, 0);
   console.log(sum);
