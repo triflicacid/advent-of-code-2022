@@ -2,7 +2,7 @@ import System.IO
 import Data.List
 import Data.List.Split
 import Data.Char
-import Funcs
+import Utils
 
 exec_moves :: [[Int]] -> [[String]] -> [[String]]
 exec_moves [] cs = cs

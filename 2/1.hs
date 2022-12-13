@@ -1,5 +1,5 @@
 import System.IO
-import Funcs
+import Utils
 
 main = do
   h <- openFile "input.txt" ReadMode

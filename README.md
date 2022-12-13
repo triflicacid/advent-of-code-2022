@@ -10,8 +10,8 @@ This year, I decided to participate in AoC whilst attempting to learn the Haskel
   - `1.hs` - Challenge parts 1, JavaScript
   - `2.js` - Challenge parts 2, Haskell
   - `2.hs` - Challenge parts 2, JavaScript
-  - **Optional** `Funcs.hs` - Haskell utility functions, as many are shared between parts.
-  - **Optional** `Funcs.js` - JavaScript utility functions, as many are shared between parts.
+  - **Optional** `Utils.hs` - Haskell utilities, as many are shared between parts.
+  - **Optional** `Utils.js` - JavaScript utilities, as many are shared between parts.
   - `inputSample.txt` - Challenge sample input
   - `input.txt` - Challenge input
 

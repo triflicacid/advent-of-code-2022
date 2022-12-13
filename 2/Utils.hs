@@ -1,4 +1,4 @@
-module Funcs where
+module Utils where
   -- Rock = A/X; Paper = B/Y; Scissors = C/Z.
 
   -- Return whether we (b) win the round

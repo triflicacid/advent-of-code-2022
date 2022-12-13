@@ -1,4 +1,4 @@
-module Funcs where
+module Utils where
   -- Convert String to Int
   to_int = read :: String -> Int
 

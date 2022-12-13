@@ -2,7 +2,7 @@ import System.IO
 import qualified Data.Text as Tx
 import qualified Data.Text.Conversions as TxCv
 import Data.List.Split
-import Funcs
+import Utils
 
 main = do
   h <- openFile "input.txt" ReadMode

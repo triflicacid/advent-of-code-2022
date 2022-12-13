@@ -1,5 +1,5 @@
 const fs = require("fs");
-const { total_score, get_play } = require("./Funcs.js");
+const { total_score, get_play } = require("./Utils.js");
 
 (function () {
   const contents = fs.readFileSync("input.txt").toString();

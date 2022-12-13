@@ -1,4 +1,4 @@
-module Funcs where
+module Utils where
   import Data.Char (ord)
   
   -- Get the intersection between two lists

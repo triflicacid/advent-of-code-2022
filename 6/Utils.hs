@@ -1,4 +1,4 @@
-module Funcs where
+module Utils where
   -- Extract substring of a string
   substr :: String -> Int -> Int -> String
   substr str a b = take (b-a) $ drop a str

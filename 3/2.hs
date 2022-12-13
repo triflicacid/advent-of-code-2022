@@ -1,6 +1,6 @@
 import System.IO
 import Data.List.Split
-import Funcs
+import Utils
 
 -- Split a list into groups
 split_groups :: Int -> [a] -> [[a]]
