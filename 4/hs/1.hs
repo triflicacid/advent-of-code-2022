@@ -4,7 +4,7 @@ import Data.List.Split
 to_int = read :: String -> Int
 
 main = do
-  h <- openFile "input.txt" ReadMode
+  h <- openFile "../input.txt" ReadMode
   contents <- hGetContents h
   let
     pairs =

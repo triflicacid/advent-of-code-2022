@@ -2,7 +2,7 @@ const fs = require('fs');
 const GROUP_SIZE = 14;
 
 (function () {
-  const contents = fs.readFileSync("input.txt").toString().trimEnd();
+  const contents = fs.readFileSync("../input.txt").toString().trimEnd();
 
   let chars = (function (group_size) {
     for (let i = 0; i < contents.length; i++) {

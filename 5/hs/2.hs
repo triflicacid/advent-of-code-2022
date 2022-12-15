@@ -24,7 +24,7 @@ put_b b itms cs = h' ++ t
     h' = (init h) ++ [itms ++ (last h)]
 
 main = do
-  h <- openFile "input.txt" ReadMode
+  h <- openFile "../input.txt" ReadMode
   contents <- hGetContents h
   let
     sects =

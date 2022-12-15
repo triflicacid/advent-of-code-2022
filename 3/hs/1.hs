@@ -5,7 +5,7 @@ import Data.List.Split
 import Utils
 
 main = do
-  h <- openFile "input.txt" ReadMode
+  h <- openFile "../input.txt" ReadMode
   contents <- hGetContents h
   let
     dups =

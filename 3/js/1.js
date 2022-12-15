@@ -2,7 +2,7 @@ const fs = require('fs');
 const { get_val } = require('./Utils.js');
 
 (function () {
-  const contents = fs.readFileSync("input.txt").toString();
+  const contents = fs.readFileSync("../input.txt").toString();
   let sum = contents.split("\r\n").map(line => {
     const first = line.slice(0, Math.ceil(line.length / 2)), last = line.slice(Math.floor(line.length / 2));
 

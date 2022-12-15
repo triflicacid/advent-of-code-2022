@@ -2,7 +2,7 @@ const fs = require('fs');
 const { get_val } = require('./Utils.js');
 
 (function () {
-  const contents = fs.readFileSync("input.txt").toString();
+  const contents = fs.readFileSync("../input.txt").toString();
   let lines = contents.split("\r\n");
   const groups = [[]];
   lines.forEach(line => {

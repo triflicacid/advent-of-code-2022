@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 (function () {
-  const contents = fs.readFileSync("input.txt").toString();
+  const contents = fs.readFileSync("../input.txt").toString();
   let [cratesS, movesS] = contents.split("\r\n\r\n");
 
   // Construct the crates

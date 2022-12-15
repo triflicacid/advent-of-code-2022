@@ -8,7 +8,7 @@ split_groups _ [] = []
 split_groups n lst = (take n lst):(split_groups n (drop n lst))
 
 main = do
-  h <- openFile "input.txt" ReadMode
+  h <- openFile "../input.txt" ReadMode
   contents <- hGetContents h
   let
     dups =
