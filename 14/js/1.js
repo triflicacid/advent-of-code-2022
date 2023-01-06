@@ -1,5 +1,5 @@
 const fs = require("fs");
-const { Formation } = require("./utils");
+const Formation = require("./Formation");
 
 (function () {
   const contents = fs.readFileSync("../input.txt").toString();

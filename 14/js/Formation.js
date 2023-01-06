@@ -35,9 +35,9 @@ class Formation {
     this.stuff.delete(x + "," + y);
   }
 
-  /** Return if there is a void below (x, y) */
-  isVoidBelow(x, y) {
-    return !isFinite(this.floor) && y > this._max[1];
+  /** Return if there is a void below the given y-level */
+  isVoidBelow(y) {
+    return !isFinite(this.floor) && y >= this._max[1];
   }
 
   /** Get Y-coordinate of the floor */
@@ -70,14 +70,14 @@ class Formation {
   /** Drop a grain of sand from <src>. Return boolean indicating if the sand was inserted. */
   dropSand() {
     let x = this.src, y = 0;
-    if (this.getAt(x, y) !== -1) return false; // Source is blocked
+    if (this.getAt(x, y) !== Formation.NOTHING) return false; // Source is blocked
     while (true) {
       // Below?
       if (this.getAt(x, y + 1) === Formation.NOTHING) y++;
       else if (this.getAt(x - 1, y + 1) === Formation.NOTHING) x--, y++;
       else if (this.getAt(x + 1, y + 1) === Formation.NOTHING) x++, y++;
       else break;
-      if (this.isVoidBelow(x, y)) return false; // Bottomless void
+      if (this.isVoidBelow(y)) return false; // Bottomless void
     }
     this.insertAt(x, y, Formation.SAND);
     return true;
@@ -102,4 +102,4 @@ class Formation {
   }
 }
 
-module.exports = { Formation };
+module.exports = Formation;
